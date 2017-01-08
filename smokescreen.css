@@ -1,0 +1,84 @@
+/* Media query for mobile: */
+@media only screen and (max-width: 425px) {
+	.logo{
+		display: block;
+		margin: auto;
+		width:30%;
+	}
+
+
+}
+
+/* Media query for tablet: */
+@media only screen and (max-width: 768px) {
+	.explanation{
+		font-size: 200%;
+	}
+}
+
+/* Media query for laptop: */
+@media only screen and (max-width: 1024px) {
+	.explanation{
+		padding-top: 20px;
+		font-size: 200%;
+	}
+}
+
+/* Media query for desktop: */
+@media only screen and (min-width: 1024px) {
+	.explanation{
+		padding-top: 10%;
+		font-size: 200%;
+	}
+
+}
+.form-element{
+	width:100%;
+}
+
+
+input[type=text]{
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+     
+ body {
+ background-image: url("assets/bg.png");
+ background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+ -o-background-size: cover;
+ font-family:Helvetica Neue; 
+ color:white;
+ } 
+ 
+ .logo-img {
+
+ max-width:20%;
+ }
+ 
+ .logo-name {
+ font-size:2.8em;
+ text-align:center;
+ color:white;
+
+ }
+ 
+ .explanation {
+ text-align: center;
+ }
+ 
+ .mockup {
+ max-width: 100%;
+ /*height:500px;
+ float:right;
+ clear:both;
+ position:relative;
+ bottom:200px;
+ left:30px;*/
+ }

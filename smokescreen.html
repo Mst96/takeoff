@@ -1,82 +1,43 @@
-
 <html>
- <head>
-        <title>TakeOff</title>
-        <meta charset="utf-8" />
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style type="text/css">
-        
-        .fixedwidth {
-    width:1050px;
-    margin: 0 auto;
-    } 
-     
-       body {
-       background-image: url("bg.png");
-       background-size: 1500px 1080px;
-       font-family:Helvetica Neue; 
-       margin:0px;
-       padding:0px;
-       color:white;
-       } 
-       
-       #logo {
-       position:relative;
-       padding:30px 0 0 0;
-       height:70px;
-       margin:0;
-       clear:both;
-       float:left;
-       }
-       
-       #logoname {
-       font-size:2.8em;
-       text-align:left;
-       padding:37px 0 0 12px;
-       margin:0;
-       float:left;
-       color:white;
-       }
-       
-       .heading {
-       clear:both;
-       position:relative;
-       top:100px;
-       }
-       
-       #mockup {
-       height:500px;
-       float:right;
-       clear:both;
-       position:relative;
-       bottom:200px;
-       left:30px;
-       }
-        
-        
-        
-        
-        
-        
-        </style>
-</head>
+	 <head>
+	        <title>TakeOff</title>
+	        <meta charset="utf-8" />
+	        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	        <meta name="viewport" content="width=device-width, initial-scale=1" />
+	        <link rel="stylesheet" type="text/css" href="smokescreen.css" />
+	        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
 
-<body>
-<div class="fixedwidth">
-<img id="logo" src="finalcopy.png"/>
-<h1 id="logoname">TakeOff</h1>
-	<h1 class="heading" style="color:#F8E84E">Hi there!</h1>
-	<h3 class="heading">TakeOff is a platform for students to find and connect with <br/> other 
-	students interested in building startups.</h3>
-	<h2 class="heading">We're currently invite-only.</h2>
-<img id="mockup" src="mockup.png" />
-	
-	
-	
-
-
-</div> <!-- fixed width-->
-</body>
-
+	<body>
+		<div class='row'>
+			<div class='logo col-xs-12 col-sm-12 col-md-4 col-lg-4'>
+				<center>
+					<img class="logo-img" src="assets/finalcopy.png"/>
+					<h1 class="logo-name">TakeOff</h1>
+				</center>
+			</div>	
+		</div>
+		<div>
+			<div class='row'>
+				<img class="mockup col-xs-12 col-sm-12 col-md-6 col-lg-6" src="assets/mockup.png" />
+				<div class="explanation col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<strong>Hi there!</strong>
+					<br>
+					<strong>TakeOff is a platform for students to find and connect with other 
+					students interested in building startups.</strong>
+					<br />
+					<h4 class="heading">Interested? Got an idea? Sign up below!</h4>
+					<form action="takeoff_signup.php" method='post' id="signup">
+						<div class='form-element'><label for='fname'>First Name: </label><input type="text" name="fname"></div>
+						<div class='form-element'><label for='sname'>Last Name: </label><input type="text" name="sname"></div>
+						<div class='form-element'><label for='email'>Email: </label><input type="text" name="email"></div>
+						<div class='form-element'><label for='idea'>Let us know a bit about your idea: </label></div>
+						<div class='form-element'><textarea id="idea" class="text" cols="20" rows ="5" name="idea"></textarea></div>
+					  	<input type="submit">
+					</form>
+				</div>
+			</div>	
+		</div>
+	</body>
 </html>
